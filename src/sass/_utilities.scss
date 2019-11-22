@@ -1,0 +1,147 @@
+// remove spacing
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// remove ul td and a links
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// margins and padding
+@each $i in $spacings {
+    .m-#{$i} {
+        margin: #{$i}rem;
+    }
+    .mt-#{$i} {
+        margin-top: #{$i}rem;
+    }
+    .mb-#{$i} {
+        margin-bottom: #{$i}rem;
+    }
+    .ml-#{$i} {
+        margin-left: #{$i}rem;
+    }
+    .mr-#{$i} {
+        margin-right: #{$i}rem;
+    }
+    .my-#{$i} {
+        margin-top: #{$i}rem;
+        margin-bottom: #{$i}rem;
+    }
+    .mx-#{$i} {
+        margin-left: #{$i}rem;
+        margin-right: #{$i}rem;
+    }
+
+    //padding
+    .p-#{$i} {
+        padding: #{$i}rem;
+    }
+    .pt-#{$i} {
+        padding-top: #{$i}rem;
+    }
+    .pb-#{$i} {
+        padding-bottom: #{$i}rem;
+    }
+    .pl-#{$i} {
+        padding-left: #{$i}rem;
+    }
+    .pr-#{$i} {
+        padding-right: #{$i}rem;
+    }
+    .py-#{$i} {
+        padding-top: #{$i}rem;
+        padding-bottom: #{$i}rem;
+    }
+    .px-#{$i} {
+        padding-left: #{$i}rem;
+        padding-right: #{$i}rem;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.text-center {
+    text-align: center;
+}
+
+.muted {
+    color: $black;
+    opacity: 0.6;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+// buttons
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    background: $black;
+    transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+    color: $white;
+    line-height: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 0.75rem 1.5625rem;
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: scale-color($color: $black, $alpha: -20%);
+        color: $white;
+    }
+}
+
+section,
+footer {
+    @extend .mx-2;
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input,
+textarea {
+    padding: 0.75rem 1.2rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+}
+
+::placeholder {
+    color: $dark;
+    opacity: 0.6;
+    font-family: $font-stack;
+}
+
+.hide {
+    display: none;
+}
+
