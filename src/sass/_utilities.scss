@@ -144,4 +144,27 @@ textarea {
 .hide {
     display: none;
 }
+.error,
+.success {
+    margin-top: 0.34rem;
+    margin-bottom: 0.34rem;
+}
+.error {
+    color: #f93b3b;
+    background: #fdd7d7;
+    @extend .p-1;
+}
 
+.success {
+    color: #60f94f;
+    background: #effeed;
+    @extend .p-1;
+}
+
+.valid {
+    border-bottom: 2px solid #60f94f;
+}
+
+.invalid {
+    border-bottom: 2px solid #f93b3b;
+}

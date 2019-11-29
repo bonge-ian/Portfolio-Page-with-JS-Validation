@@ -295,15 +295,17 @@
                         Phone Number: +254 758-963-852
                     </div>
 
-                    <form action="" method="POST">
+                    <form id="contactForm" novalidate>
                         <div class="grid">
                             <div>
                                 <label for="name">Name</label>
                                 <input type="text" name="name" id="name" placeholder="Enter your name" />
+                                <div></div>
                             </div>
                             <div>
                                 <label for="email">Email</label>
                                 <input type="email" name="email" id="email" placeholder="Enter your email" />
+                                <div></div>
                             </div>
                         </div>
 
@@ -315,6 +317,7 @@
                                 rows="5"
                                 placeholder="Type your message..."
                             ></textarea>
+                            <div></div>
                         </div>
 
                         <button type="submit" class="btn">Submit</button>

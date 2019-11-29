@@ -186,10 +186,10 @@
             </nav>
             <div class="mobile-nav hide">
                 <ul class="mobile-menu ">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#" class="active">About</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" class="active">About</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
             </div>
         </header>
 
@@ -200,11 +200,16 @@
                         <div class="desc">
                             <h5 class="muted uppercase">Hey there!</h5>
                             <h2 class="mb-1">I am Wanja Maria</h2>
-                            <p class="muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto sit odio officia voluptatem mollitia, accusantium perferendis dolor illum obcaecati accusamus temporibus sunt nobis assumenda corporis magni vitae eaque et, non nulla at, cumque placeat repudiandae quos quidem!</p>
+                            <p class="muted">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto sit odio officia
+                                voluptatem mollitia, accusantium perferendis dolor illum obcaecati accusamus temporibus
+                                sunt nobis assumenda corporis magni vitae eaque et, non nulla at, cumque placeat
+                                repudiandae quos quidem!
+                            </p>
                         </div>
                     </div>
                     <div class="showcase">
-                        <img src="img/ask.png" alt="About Hero">
+                        <img src="img/ask.png" alt="About Hero" />
                     </div>
                 </div>
             </div>
@@ -215,7 +220,10 @@
                 <div class="grid">
                     <div class="desc">
                         <h3>My Career so far</h3>
-                        <p class="muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, soluta tempora. Sequi ad non sint.</p>
+                        <p class="muted">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, soluta tempora. Sequi
+                            ad non sint.
+                        </p>
                     </div>
                     <div class="list">
                         <div class="skills">
@@ -238,14 +246,14 @@
                 <p class="muted mb-2">Take a look on what I have been upto lately.</p>
             </div>
             <div class="grid">
-                <div><img src="img/abstract.png" alt="Abstract"></div>
-                <div><img src="img/cert.png" alt="Certificate"></div>
-                <div><img src="img/goals.png" alt="Goals"></div>
-                <div><img src="img/plan.png" alt="Plan"></div>
-                <div><img src="img/progress.png" alt="Progress"></div>
-                <div><img src="img/services.png" alt="Services"></div>
-                <div><img src="img/site2.png" alt="Site Two"></div>
-                <div><img src="img/social.png" alt="Social"></div>
+                <div><img src="img/abstract.png" alt="Abstract" /></div>
+                <div><img src="img/cert.png" alt="Certificate" /></div>
+                <div><img src="img/goals.png" alt="Goals" /></div>
+                <div><img src="img/plan.png" alt="Plan" /></div>
+                <div><img src="img/progress.png" alt="Progress" /></div>
+                <div><img src="img/services.png" alt="Services" /></div>
+                <div><img src="img/site2.png" alt="Site Two" /></div>
+                <div><img src="img/social.png" alt="Social" /></div>
             </div>
         </section>
         <section id="contact">
@@ -258,15 +266,17 @@
                         Phone Number: +254 758-963-852
                     </div>
 
-                    <form action="" method="POST">
+                    <form id="contactForm" novalidate>
                         <div class="grid">
                             <div>
                                 <label for="name">Name</label>
                                 <input type="text" name="name" id="name" placeholder="Enter your name" />
+                                <div></div>
                             </div>
                             <div>
                                 <label for="email">Email</label>
                                 <input type="email" name="email" id="email" placeholder="Enter your email" />
+                                <div></div>
                             </div>
                         </div>
 
@@ -278,6 +288,7 @@
                                 rows="5"
                                 placeholder="Type your message..."
                             ></textarea>
+                            <div></div>
                         </div>
 
                         <button type="submit" class="btn">Submit</button>
@@ -345,6 +356,5 @@
             </nav>
         </footer>
         <script src="app.js"></script>
-
     </body>
 </html>
